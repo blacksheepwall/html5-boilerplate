@@ -3,13 +3,13 @@ table of contents](README.md)
 
 # The CSS
 
-The HTML5 Boilerplate starting CSS includes:
+HTML5 Boilerplate CSS 包含：
 
 * [Normalize.css](https://github.com/necolas/normalize.css).
-* Useful HTML5 Boilerplate defaults.
-* Common helpers.
-* Placeholder media queries.
-* Print styles.
+* 易用的 HTML5 Boilerplate 预设
+* Common helpers
+* Placeholder media queries
+* 打印样式
 
 This starting CSS does not rely on the presence of conditional classnames,
 conditional style sheets, or Modernizr. It is ready to use whatever your
@@ -18,15 +18,13 @@ development preferences happen to be.
 
 ## Normalize.css
 
-Normalize.css is a modern, HTML5-ready alternative to CSS resets. It contains
-extensive inline documentation. Please refer to the [Normalize.css
-project](http://necolas.github.com/normalize.css/) for more information.
+Normalize.css 是个现代的、为 HTML5 准备的 CSS reset，该文件中富含大量注释。访问 [Normalize.css
+project](http://necolas.github.com/normalize.css/) 查看更多信息。
 
 
-## HTML5 Boilerplate defaults
+## HTML5 Boilerplate 预设
 
-This project includes a handful of base styles that build upon Normalize.css.
-These include:
+该项目包含少量基础样式： 
 
 * Basic typography setting to provide improved text readability by default.
 * Protection against unwanted `text-shadow` during text highlighting.
