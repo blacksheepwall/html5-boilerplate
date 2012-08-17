@@ -3,29 +3,23 @@ table of contents](README.md)
 
 # The JavaScript
 
-Information about the default JavaScript included in the project.
+关于项目中 JavaScript 的组织方式。
 
 ## main.js
 
-This file can be used to contain or reference your site/app JavaScript code.
-For larger projects, you can make use of a JavaScript module loader, like
-[Require.js](http://requirejs.org/), to load any other scripts you need to
-run.
+该文件是的 site/app 的主入口。对于大型项目而言，你可以使用 JavaScript 模块加载器，比如 [Require.js](http://requirejs.org/)，来动态加载所需模块。
 
 ## plugins.js
 
-This file can be used to contain all your plugins, such as jQuery plugins and
-other 3rd party scripts.
+该文件包含所有插件，比如 jQuery plugins 和其他第三方脚本。
 
-One approach is to put jQuery plugins inside of a `(function($){ ...
-})(jQuery);` closure to make sure they're in the jQuery namespace safety
-blanket. Read more about [jQuery plugin
+其中有一种封装 jQuery plugins 的方法是通过形如 `(function($){ ...
+})(jQuery);` 的闭包来确保代码在 jQuery 命名空间下执行。更多用法请查看 [jQuery plugin
 authoring](http://docs.jquery.com/Plugins/Authoring#Getting_Started)
 
 ## vendor
 
-This directory can be used to contain all 3rd party library code.
-
-Minified versions of the latest jQuery and Modernizr libraries are included by
-default. You may wish to create your own [custom Modernizr
-build](http://www.modernizr.com/download/).
+该目录存放所有第三方类库。
+ 
+最新压缩版的 jQuery 和 Modernizr 库可以存放在此，当然你也可以定制自己的类库 [custom Modernizr
+build](http://www.modernizr.com/download/)。
