@@ -11,9 +11,7 @@ HTML5 Boilerplate CSS 包含：
 * Placeholder media queries
 * 打印样式
 
-This starting CSS does not rely on the presence of conditional classnames,
-conditional style sheets, or Modernizr. It is ready to use whatever your
-development preferences happen to be.
+这份 CSS 并不依赖条件样式名、样式或者 Modernizr。
 
 
 ## Normalize.css
@@ -55,43 +53,28 @@ issue/research](https://github.com/h5bp/html5-boilerplate/issues/194/).
 
 #### `.invisible`
 
-Add the `.invisible` class to any element you want to hide without affecting
-layout. When you use `display: none` an element is effectively removed from the
-layout. But in some cases you want the element to simply be invisible while
-remaining in the flow and not affecting the positioning of surrounding
-content.
+`.invisible` 样式用来隐藏元素而不对 dom 树产生 reflow，当使用 `display: none` 时，对应元素的隐藏会使 dom 产生 relow。
 
 #### `.clearfix`
 
-Adding `.clearfix` to an element will ensure that it always fully contains its
-floated children. There have been many variants of the clearfix hack over the
-years, and there are other hacks that can also help you to contain floated
-children, but the HTML5 Boilerplate currently uses the [micro
-clearfix](http://nicolasgallagher.com/micro-clearfix-hack/).
+`.clearfix` 主要用来清除浮动，不详细赘述。[micro
+clearfix](http://nicolasgallagher.com/micro-clearfix-hack/)
 
 
 ## Media Queries
 
-The boilerplate makes it easy to get started with a "Mobile First" and
+该模板非常适合用来做移动应用
 [Responsive Web
-Design](http://www.alistapart.com/articles/responsive-web-design/) approach to
-development. But it's worth remembering that there are [no silver
+Design](http://www.alistapart.com/articles/responsive-web-design/)，但有点要牢记：根本没有所谓的银弹 [no silver
 bullets](http://www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/).
 
-We include a placeholder Media Queries to build up your mobile styles for wider
-viewports. It is recommended that you adapt these Media Queries based on the
-content of your site rather than mirroring the fixed dimensions of specific
-devices.
+模板引入了 Media Query 占位语句 (placeholder) 来建立你的移动应用样式，强烈建议你在此基础上进行调整。
 
-If you do not want to take a "Mobile First" approach, you can simply edit or
-remove these placeholder Media Queries. One possibility would be to work from
-wide viewports down and use `max-width` MQs instead, e.g., `@media only screen
+如果你并不想做移动应用，可以编辑、删除这些 Media Query 占位语句。比方说，使用 `@media only screen
 and (max-width: 480px)`.
 
-Take a look into the [Mobile
-Boilerplate](https://github.com/h5bp/mobile-boilerplate) for additional features
-that are useful when developing mobile websites.
-
+你可以查阅 [Mobile
+Boilerplate](https://github.com/h5bp/mobile-boilerplate) 获取其他有用信息。
 
 ## 打印样式
 
