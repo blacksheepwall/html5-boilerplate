@@ -1,7 +1,6 @@
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
+HTML5 Boilerplate 是个专业的前端框架，用来开发快速、健壮、灵活的 web apps 或者 网站。
 
 This project is the product of many years of iterative development and combined
 community knowledge. It does not impose a specific development philosophy or
