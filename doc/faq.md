@@ -1,87 +1,49 @@
 [HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
 table of contents](README.md)
 
-# Frequently asked questions
+# FAQ
 
-## Why is the URL for jQuery without "http"?
+## 为什么不使用 http 开头的 url 来载入 jQuery？
 
-This is an intentional use of [protocol-relative
-URLs](http://paulirish.com/2010/the-protocol-relative-url/)
+这是有意为之的，具体可见 [protocol-relative
+URLs](http://paulirish.com/2010/the-protocol-relative-url/) 。
 
-**N.B.** Using a protocol-relative URL for files that exist on a CDN is
-problematic when you try to view your local files directly in the browser. The
-browser will attempt to fetch the file from your local file system. We
-recommend that you use a local server to test your pages (or Dropbox). This can
-be done using Python by running `python -m SimpleHTTPServer` from your local
-directory, using Ruby by installing and running
-[asdf](https://rubygems.org/gems/asdf), and by installing any one of XAMPP,
-MAMP, or WAMP.
+**请注意** 引用资源请使用相对协议 (protocol-relative) URL 。  
+参考资料：[http://paulirish.com/2010/the-protocol-relative-url/]() 以及 [http://ioio.name/the-protocol-relative-url.html]()
 
 
-### Why don't you automatically load the latest version of jQuery from the Google CDN?
+### 为什么不直接从 Google 的 CDN 上加载最新的 jQuery 版本？
 
-1. The latest version of jQuery may not be compatible with the existing
-   plugins/code on the site. Version updating should be an intentional
-   decision.
-2. The latest version has a very short `max-age=3600` compares to the specific
-   version of `max-age=31536000`, which means you won't get the benefits of
-   long-term caching.
+1. 最新版本 jQuery 很可能与现有代码、插件不能很好兼容，版本的更新可能导致潜在的问题。
+2. 最新版本经常有一段 `max-age=3600`，这段代码会影响缓存。
 
 
-### Why is the Google Analytics code at the bottom? Google recommends it be placed the `head`.
+### 为什么要将 Google Analytics 代码置于页面底部？ Google 却推荐将其置于 `head` 中。
 
-The advantage to placing it in the `head` is that you will track a user's
-pageview even if they leave the page before it has been fully loaded. However,
-putting the code at the bottom keeps all the scripts together and reinforces
-that scripts at the bottom are the right move.
+将统计代码置于 `head` 中的目的是为了更精确地跟踪用户的访问行为，即使在整个页面还没有加载完毕前就离开了。然而如果置于底部，无疑能更快地加载页面，而且同其他脚本代码组织在一起，维护性也大大增强。
 
 
-### How can I integrate [Twitter Bootstrap](http://twitter.github.com/bootstrap/) with HTML5 Boilerplate?
+### 如何整合 [Twitter Bootstrap](http://twitter.github.com/bootstrap/) 与 HTML5 Boilerplate？
 
-You can use [Initializr](http://initializr.com) to create a custom build that
-includes HTML5 Boilerplate with Twitter Bootstrap.
+可以使用 [Initializr](http://initializr.com) 来定制一个包含两者的版本。
 
-Read more about how [HTML5 Boilerplate and Twitter Bootstrap complement each
-other](http://www.quora.com/Is-Bootstrap-a-complement-OR-an-alternative-to-HTML5-Boilerplate-or-viceversa/answer/Nicolas-Gallagher).
-
-
-### How do I prevent phone numbers looking twice as large and having a Skype highlight?
-
-If this is occurring, it is because a user has the Skype browser extension
-installed.
-
-Use the following CSS to prevent Skype from formatting the numbers on your
-page:
-
-```
-span.skype_pnh_container {
-    display: none !important;
-}
-
-span.skype_pnh_print_container {
-    display: inline !important;
-}
-```
+具体信息请访问 [HTML5 Boilerplate and Twitter Bootstrap complement each
+other](http://www.quora.com/Is-Bootstrap-a-complement-OR-an-alternative-to-HTML5-Boilerplate-or-viceversa/answer/Nicolas-Gallagher) 。
 
 
-### What is profiling, and how do I use it, why do I want it?
+### 什么是 profiling，如何使用？
 
 [Firebug](http://michaelsync.net/2007/09/10/firebug-tutorial-logging-profiling-and-commandline-part-ii)
-and [Chrome Dev
-tools](http://code.google.com/chrome/devtools/docs/profiles.html) offer
-profiling, but there is no easy way to profile IE6 and IE7. If you're focused
-on providing the most responsive experience possible (you should be!) then
-profiling should be part of your development workflow.
+以及 [Chrome Dev
+tools](http://code.google.com/chrome/devtools/docs/profiles.html) 提供了 profiling
+，至于 IE中 如何调试，在此不赘述。
 
 
-### Do I need to upgrade my sites each time a new version of HTML5 Boilerplate is released?
+### 当新版本的 HTML5 Boilerplate 发布以后，我的站点是否需要同步升级？
 
-No. You don't normally replace the foundations of a house once it has been
-built. There is nothing stopping you from trying to work in the latest changes
-but you'll have to assess the costs/benefits of doing so.
+没必要，框架的根基一般不会调整。
 
 
-### Where can I get help for support questions?
+### 遇到困难，在哪里可以获得帮助？
 
-Please ask for help on
-[StackOverflow](http://stackoverflow.com/questions/tagged/html5boilerplate).
+求助请访问 [StackOverflow](http://stackoverflow.com/questions/tagged/html5boilerplate) 。
