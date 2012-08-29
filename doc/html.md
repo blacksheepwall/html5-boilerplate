@@ -1,9 +1,9 @@
 [HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
 table of contents](README.md)
 
-# The HTML
+# HTML
 
-## Conditional `html` classes
+## 条件性的 `html` 样式
 
 A series of IE conditional comments apply the relevant IE-specific classes to
 the `html` tag. This provides one method of specifying CSS fixes for specific
@@ -24,14 +24,14 @@ element has several benefits:
 * It can improve the clarity of code in multi-developer teams.
 
 
-## The `no-js` class
+## `no-js` 样式
 
 Allows you to more easily explicitly add custom styles when JavaScript is
 disabled (`no-js`) or enabled (`js`). More here: [Avoiding the
 FOUC](http://paulirish.com/2009/avoiding-the-fouc-v3/).
 
 
-## The order of meta tags, and `<title>`
+## meta 标签顺序，以及 `<title>`
 
 As recommended by [the HTML5
 spec](http://www.whatwg.org/specs/web-apps/current-work/complete/semantics.html#charset)
@@ -83,7 +83,7 @@ header on the server-side. This is because the IE preference option 'Display
 intranet sites in Compatibility View' is checked by default.
 
 
-## Mobile viewport
+## 移动端的视图 viewport
 
 There are a few different options that you can use with the [`viewport` meta
 tag](https://docs.google.com/present/view?id=dkx3qtm_22dxsrgcf4 "Viewport and
@@ -95,7 +95,7 @@ a simple setup that strikes a good balance for general use cases.
 <meta name="viewport" content="width=device-width">
 ```
 
-## Favicons and Touch Icons
+## 站点 Favicons 以及 Touch Icons
 
 The shortcut icons should be put in the root directory of your site. HTML5
 Boilerplate comes with a default set of icons (include favicon and Apple Touch
@@ -108,7 +108,7 @@ For a comprehensive overview, please read [Everything you always wanted to know
 about touch icons](http://mathiasbynens.be/notes/touch-icons) by Mathias
 Bynens.
 
-## Modernizr
+## Modernizr 库
 
 HTML5 Boilerplate uses a custom build of Modernizr.
 
@@ -127,7 +127,7 @@ handle them properly. Therefore the Modernizr script is the only JavaScript
 file synchronously loaded at the top of the document.
 
 
-## The content area
+## 内容区域
 
 The central part of the boilerplate template is pretty much empty. This is
 intentional, in order to make the boilerplate suitable for both web page and
@@ -139,7 +139,7 @@ The main content area of the boilerplate includes a prompt to install Chrome
 Frame (which no longer requires administrative rights) for users of IE 6. If
 you intended to support IE 6, then you should remove the snippet of code.
 
-### Google CDN for jQuery
+### Google CDN 上的 jQuery框架
 
 The Google CDN version of the jQuery JavaScript library is referenced towards
 the bottom of the page using a protocol-independent path (read more about this
@@ -153,7 +153,7 @@ Network) version. Your users may already have this version cached in their
 browsers, and Google's CDN is likely to deliver the asset faster than your
 server.
 
-### Google Analytics Tracking Code
+### Google Analytics 统计代码
 
 Finally, an optimized version of the latest Google Analytics tracking code is
 included. Google recommends that this script be placed at the top of the page.
