@@ -110,7 +110,7 @@ Bynens.
 
 ## Modernizr 库
 
-HTML5 Boilerplate uses a custom build of Modernizr.
+HTML5 Boilerplate 使用定制过的 Modernizr 工具库。
 
 [Modernizr](http://modernizr.com) is a JavaScript library which adds classes to
 the `html` element based on the results of feature test and which ensures that
