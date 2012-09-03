@@ -5,10 +5,7 @@ table of contents](README.md)
 
 ## 条件性的 `html` 样式
 
-A series of IE conditional comments apply the relevant IE-specific classes to
-the `html` tag. This provides one method of specifying CSS fixes for specific
-legacy versions of IE. While you may or may not choose to use this technique in
-your project code, HTML5 Boilerplate's default CSS does not rely on it.
+一些条件注释可以生成 IE 特定样式应用在 `html` 标签上，以此修复某版本 IE 缺陷，当然你也许并不大打算使用这个 trick ，没关系， HTML5 Boilerplate 的默认样式并不依赖它。
 
 When using the conditional classes technique, applying classes to the `html`
 element has several benefits:
@@ -26,30 +23,25 @@ element has several benefits:
 
 ## `no-js` 样式
 
-Allows you to more easily explicitly add custom styles when JavaScript is
-disabled (`no-js`) or enabled (`js`). More here: [Avoiding the
-FOUC](http://paulirish.com/2009/avoiding-the-fouc-v3/).
+当用户禁用浏览器 js 时，在标签上设置一个 `no-js` 样式，反之如果启用，则设置为 `js` : [Avoiding the
+FOUC](http://paulirish.com/2009/avoiding-the-fouc-v3/) 。
 
 
 ## meta 标签顺序，以及 `<title>`
 
-As recommended by [the HTML5
+根据 [the HTML5
 spec](http://www.whatwg.org/specs/web-apps/current-work/complete/semantics.html#charset)
-(4.2.5.5 Specifying the document's character encoding), add your charset
-declaration early (before any ASCII art ;) to avoid a potential
-[encoding-related security
-issue](http://code.google.com/p/doctype/wiki/ArticleUtf7) in IE. It should come
-in the first [1024
+(4.2.5.5 指定文档字符编码)，及早声明字符集 (before any ASCII art ;) 来避免 IE 下潜在的 [encoding-related security
+issue](http://code.google.com/p/doctype/wiki/ArticleUtf7) ， [1024
 bytes](http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset).
 
-The charset should also come before the `<title>` tag, due to [potential XSS
-vectors](http://code.google.com/p/doctype-mirror/wiki/ArticleUtf7).
+由于 [potential XSS
+vectors](http://code.google.com/p/doctype-mirror/wiki/ArticleUtf7) ，字符集应当在 `<title>` 标签前声明。
 
-The meta tag for compatibility mode [needs to be before all elements except
-title and meta](http://h5bp.com/f "Defining Document Compatibility - MSDN").
-And that same meta tag can only be invoked for Google Chrome Frame if it is
-within the [first 1024
-bytes](http://code.google.com/p/chromium/issues/detail?id=23003).
+兼容模式下的 meta 标签 [needs to be before all elements except
+title and meta](http://h5bp.com/f "Defining Document Compatibility - MSDN") ，
+如果在 [first 1024
+bytes](http://code.google.com/p/chromium/issues/detail?id=23003) 中，此 meta 标签可以在 Google Chrome Frame 中触发特有效果。
 
 
 ## X-UA-Compatible
