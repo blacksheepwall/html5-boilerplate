@@ -10,15 +10,15 @@ table of contents](README.md)
 When using the conditional classes technique, applying classes to the `html`
 element has several benefits:
 
-* It avoids a [file blocking
-  issue](http://webforscher.wordpress.com/2010/05/20/ie-6-slowing-down-ie-8/)
-  discovered by Stoyan Stefanov and Markus Leptien.
-* It avoids the need for an empty comment that also fixes the above issue.
-* CMSes like WordPress and Drupal use the body class more heavily. This makes
+* 能够避免由 Stoyan Stefanov 和 Markus Leptien 发现的 [file blocking
+  issue](http://webforscher.wordpress.com/2010/05/20/ie-6-slowing-down-ie-8/) 。
+  
+* 避免引入由上述 issue 产生的空元素
+* 类似 WordPress 的 CMS 或文档管理类网站，会经常使用 body 样式，This makes
   integrating there a touch simpler.
-* It still validates as HTML5.
-* It uses the same element as Modernizr (and Dojo). That feels nice.
-* It can improve the clarity of code in multi-developer teams.
+* 仍旧能通过 HTML5 验证。
+* 使用与 Modernizr (以及 Dojo) 一样的元素，看起来不错。
+* 在多人团队中代码清晰明了。
 
 
 ## `no-js` 样式
