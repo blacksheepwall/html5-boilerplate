@@ -7,14 +7,13 @@ table of contents](README.md)
 
 一些条件注释可以生成 IE 特定样式应用在 `html` 标签上，以此修复某版本 IE 缺陷，当然你也许并不大打算使用这个 trick ，没关系， HTML5 Boilerplate 的默认样式并不依赖它。
 
-When using the conditional classes technique, applying classes to the `html`
-element has several benefits:
+在 `html` 上使用条件样式有以下优点：
 
 * 能够避免由 Stoyan Stefanov 和 Markus Leptien 发现的 [file blocking
   issue](http://webforscher.wordpress.com/2010/05/20/ie-6-slowing-down-ie-8/) 。
   
 * 避免引入由上述 issue 产生的空元素
-* 类似 WordPress 的 CMS 或文档管理类网站，会经常使用 body 样式，This makes
+* 类似 WordPress 的 CMS 或文档管理类网站，会经常使用 body 样式，This makes
   integrating there a touch simpler.
 * 仍旧能通过 HTML5 验证。
 * 使用与 Modernizr (以及 Dojo) 一样的元素，看起来不错。
@@ -46,26 +45,20 @@ bytes](http://code.google.com/p/chromium/issues/detail?id=23003) 中，此 meta 
 
 ## X-UA-Compatible
 
-This makes sure the latest version of IE is used in versions of IE that contain
-multiple rendering engines. Even if a site visitor is using IE8 or IE9, it's
-possible that they're not using the latest rendering engine their browser
-contains. To fix this, use:
+浏览器在含有多个渲染引擎时，该属性可以确保切换至最新版本。即使用户正在使用 IE8 或者 IE9，那也并不意味着他们的浏览器会切换至最新渲染引擎。为解决这个问题，使用：
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 ```
 
-The `meta` tag tells the IE rendering engine two things:
+这行 `meta` 标签会告诉 IE 渲染引擎两件事情：
 
-1. It should use the latest, or edge, version of the IE rendering environment
-2. If already installed, it should use the Google Chrome Frame rendering
-   engine.
+1. 使用最新或次最新的渲染引擎。
+2. 如果安装过 Google Chrome Frame，那么启用它来渲染页面。
 
-This `meta` tag ensures that anyone browsing your site in IE is treated to the
-best possible user experience that their browser can offer.
+`meta` 标签确保用户在使用 IE 时，自动启用浏览器最好的渲染模式来渲染页面。
 
-This line breaks validation, and the Google Chrome Frame part won't work inside
-a conditional comment. To avoid these edge case issues it is recommended that
+当然，这行语句会影响 html 验证，Google Chrome Frame 这部分代码不会在条件注释中生效。 To avoid these edge case issues it is recommended that
 you **remove this line and use the `.htaccess`** (or other server config)
 to send these headers instead. You also might want to read [Validating:
 X-UA-Compatible](http://groups.google.com/group/html5boilerplate/browse_thread/thread/6d1b6b152aca8ed2).
