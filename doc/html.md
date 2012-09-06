@@ -63,18 +63,16 @@ you **remove this line and use the `.htaccess`** (or other server config)
 to send these headers instead. You also might want to read [Validating:
 X-UA-Compatible](http://groups.google.com/group/html5boilerplate/browse_thread/thread/6d1b6b152aca8ed2).
 
-If you are serving your site on a non-standard port, you will need to set this
-header on the server-side. This is because the IE preference option 'Display
-intranet sites in Compatibility View' is checked by default.
+如果你的网站端口不是标准的 80，那么你需要在服务器端设置该 `header`，因为 IE 默认设置会启用 'Display
+intranet sites in Compatibility View' 。
 
 
 ## 移动端的视图 viewport
 
-There are a few different options that you can use with the [`viewport` meta
+目前已经有几种 [`viewport` meta
 tag](https://docs.google.com/present/view?id=dkx3qtm_22dxsrgcf4 "Viewport and
-Media Queries - The Complete Idiot's Guide"). You can find out more in [the
-Apple developer docs](http://j.mp/mobileviewport). HTML5 Boilerplate comes with
-a simple setup that strikes a good balance for general use cases.
+Media Queries - The Complete Idiot's Guide") 的使用方式了，你还可以在 [the
+Apple developer docs](http://j.mp/mobileviewport) 找到更多。 HTML5 Boilerplate 会在这些方案中摸索出一个普适的设置。
 
 ```html
 <meta name="viewport" content="width=device-width">
@@ -82,26 +80,20 @@ a simple setup that strikes a good balance for general use cases.
 
 ## 站点 Favicons 以及 Touch Icons
 
-The shortcut icons should be put in the root directory of your site. HTML5
-Boilerplate comes with a default set of icons (include favicon and Apple Touch
-Icons) that you can use as a baseline to create your own.
+网站标识图标应该至于网站的根目录。HTML5
+Boilerplate 默认有一组图标 (包括 favicon 和 供Apple Touch 设备的图标) 。
 
-If your site or icons are in a sub-directory, you will need to reference the
-icons using `link` elements placed in the HTML `head` of your document.
+如果图标在子目录，那么需要在 `head` 中插入指向图标资源的 `link` 元素。
 
-For a comprehensive overview, please read [Everything you always wanted to know
+更多信息请查看：[Everything you always wanted to know
 about touch icons](http://mathiasbynens.be/notes/touch-icons) by Mathias
-Bynens.
+Bynens。
 
 ## Modernizr 库
 
 HTML5 Boilerplate 使用定制过的 Modernizr 工具库。
 
-[Modernizr](http://modernizr.com) is a JavaScript library which adds classes to
-the `html` element based on the results of feature test and which ensures that
-all browsers can make use of HTML5 elements (as it includes the HTML5 Shiv).
-This allows you to target parts of your CSS and JavaScript based on the
-features supported by a browser.
+[Modernizr](http://modernizr.com) 是一个检测浏览器对 HTML5 和 CSS3 特性支持的 JS 库，通过检测你的浏览器对 html5/css3 的支持情况，返回特定的样式名称，从而可以针对不同的浏览器写出不同的样式。
 
 In general, in order to keep page load times to a minimum, it's best to call
 any JavaScript at the end of the page because if a script is slow to load
