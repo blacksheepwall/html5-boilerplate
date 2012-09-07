@@ -95,50 +95,28 @@ HTML5 Boilerplate 使用定制过的 Modernizr 工具库。
 
 [Modernizr](http://modernizr.com) 是一个检测浏览器对 HTML5 和 CSS3 特性支持的 JS 库，通过检测你的浏览器对 html5/css3 的支持情况，返回特定的样式名称，从而可以针对不同的浏览器写出不同的样式。
 
-In general, in order to keep page load times to a minimum, it's best to call
-any JavaScript at the end of the page because if a script is slow to load
-from an external server it may cause the whole page to hang. That said, the
-Modernizr script *needs* to run *before* the browser begins rendering the page,
-so that browsers lacking support for some of the new HTML5 elements are able to
-handle them properly. Therefore the Modernizr script is the only JavaScript
-file synchronously loaded at the top of the document.
-
 
 ## 内容区域
 
-The central part of the boilerplate template is pretty much empty. This is
-intentional, in order to make the boilerplate suitable for both web page and
-web app development.
+html5 boilerplate 模版的中心内容体是空的，这是有意而为之，使其既适应 web 以及 app的开发。
 
 ### Google Chrome Frame
 
-The main content area of the boilerplate includes a prompt to install Chrome
-Frame (which no longer requires administrative rights) for users of IE 6. If
-you intended to support IE 6, then you should remove the snippet of code.
+html boilerplate 主体内容区域会包含一个明显的提示，通知用户安装 Chrome
+Frame （IE 用户安装不再需要管理员权限） 。如果你不打算兼容 IE6，那么移除这段代码就好了。
 
-### Google CDN 上的 jQuery框架
 
-The Google CDN version of the jQuery JavaScript library is referenced towards
-the bottom of the page using a protocol-independent path (read more about this
-in the [FAQ](faq.md). A local fallback of jQuery is included for rare instances
-when the CDN version might not be available, and to facilitate offline
-development.
+### Google CDN 上的 jQuery 框架
 
-Regardless of which JavaScript library you choose to use, it is well worth the
-time and effort to look up and reference the Google CDN (Content Delivery
-Network) version. Your users may already have this version cached in their
-browsers, and Google's CDN is likely to deliver the asset faster than your
-server.
+该库使用协议无关 (protocol-independent) 的路径 （参考 [FAQ](faq.md) ），并置于页面的底部。当 CDN 版本由于某些缘故无法访问时，会有一个本地版本的 fallback 加载机制。
+
+不管使用何种 js 框架，引入 CDN 版是非常值得的，一方面用户浏览器中可能已缓存了某个版本的框架，另一方面一般来说 google 的 CDN 访问速度要比你的服务器更快些。
 
 ### Google Analytics 统计代码
 
-Finally, an optimized version of the latest Google Analytics tracking code is
-included. Google recommends that this script be placed at the top of the page.
-Factors to consider: if you place this script at the top of the page, you’ll be
-able to count users who don’t fully load the page, and you’ll incur the max
-number of simultaneous connections of the browser.
+最后提到 GA 统计代码，官方推荐将这段代码置于页面顶部，目的是在整个页面还未完全载入前更好的追踪用户行为。
 
-Further information:
+更多信息请访问：
 
 * [Optimizing the asynchronous Google Analytics
   snippet](http://mathiasbynens.be/notes/async-analytics-snippet).
