@@ -15,7 +15,7 @@ table of contents](README.md)
 
 ## Basic structure
 
-一份HTML5 基础模板大致目录如下所示：
+一份 HTML5 基础模板大致目录如下所示：
 
 ```
 .

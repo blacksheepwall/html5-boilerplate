@@ -1,19 +1,14 @@
 [HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
 table of contents](README.md)
 
-# Extend and customise HTML5 Boilerplate
+# 扩展与定制 HTML5 Boilerplate
 
-Here is some useful advice for how you can make your project with HTML5
-Boilerplate even better. We don't want to include it all by default, as not
-everything fits with everyone's needs.
+这里有几条增强项目质量的建议，并不是所有开发者都有需求，所以我们默认不将其至于模板中。
 
 
-## DNS prefetching
+## DNS 预取
 
-In short, DNS Prefetching is a method of informing the browser of domain names
-referenced on a site so that the client can resolve the DNS for those hosts,
-cache them, and when it comes time to use them, have a faster turn around on
-the request.
+简言之，DNS 预取是一项性能优化技术。载入页面的过程中，浏览器解析到网页上包含的网址时，会在用户访问它们之前在后台对这些网址后所包含的主机名进行域名解析，等到页面载入完毕或者用户真正去点击这些网址时，相对应的 DNS 解析工作已经提前完成了，不会在用户点击后才开始解析 DNS。DNS 解析较慢的用户能感觉到 DNS 解析的提速。
 
 ### Implicit prefetches
 
