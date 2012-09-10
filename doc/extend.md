@@ -10,22 +10,13 @@ table of contents](README.md)
 
 简言之，DNS 预取是一项性能优化技术。载入页面的过程中，浏览器解析到网页上包含的网址时，会在用户访问它们之前在后台对这些网址后所包含的主机名进行域名解析，等到页面载入完毕或者用户真正去点击这些网址时，相对应的 DNS 解析工作已经提前完成了，不会在用户点击后才开始解析 DNS。DNS 解析较慢的用户能感觉到 DNS 解析的提速。
 
-### Implicit prefetches
+### 隐性的资源预取 （Implicit prefetches）
 
-There is a lot of prefetching done for you automatically by the browser. When
-the browser encounters an anchor in your html that does not share the same
-domain name as the current location the browser requests, from the client OS,
-the IP address for this new domain. The client first checks its cache and
-then, lacking a cached copy, makes a request from a DNS server. These requests
-happen in the background and are not meant to block the rendering of the
-page.
+当浏览器发现页面上的某些链接不属于当前域下，会利用空闲时间自动预取一些资源。客户端首先检查本地缓存，如果没找到，那么会向 DNS 服务器请求资源，这些操作会在后台默默执行，不会影响页面的渲染与脚本的执行。
 
-The goal of this is that when the foreign IP address is finally needed it will
-already be in the client cache and will not block the loading of the foreign
-content. Less requests result in faster page load times. The perception of this
-is increased on a mobile platform where DNS latency can be greater.
+该手段目的是为了提高访问速度，而且相比不预取时会发送更少的请求，在移动端优化效果会更明显。
 
-#### Disable implicit prefetching
+#### 禁用隐性的资源预取 (implicit prefetching)
 
 ```html
 <meta http-equiv="x-dns-prefetch-control" content="off">
@@ -37,7 +28,7 @@ prefetch any explicit dns-prefetch links.
 **_WARNING:_** THIS MAY MAKE YOUR SITE SLOWER IF YOU RELY ON RESOURCES FROM
 FOREIGN DOMAINS.
 
-### Explicit prefetches
+### 显性的资源预取 (Explicit prefetches)
 
 Typically the browser only scans the HTML for foreign domains. If you have
 resources that are outside of your HTML (a javascript request to a remote
