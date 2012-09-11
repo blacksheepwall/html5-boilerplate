@@ -6,47 +6,40 @@ table of contents](README.md)
 这里有几条增强项目质量的建议，并不是所有开发者都有需求，所以我们默认不将其至于模板中。
 
 
-## DNS 预取
+## DNS 预获取
 
-简言之，DNS 预取是一项性能优化技术。载入页面的过程中，浏览器解析到网页上包含的网址时，会在用户访问它们之前在后台对这些网址后所包含的主机名进行域名解析，等到页面载入完毕或者用户真正去点击这些网址时，相对应的 DNS 解析工作已经提前完成了，不会在用户点击后才开始解析 DNS。DNS 解析较慢的用户能感觉到 DNS 解析的提速。
+简言之，DNS 预取是一项性能优化技术。载入页面的过程中，浏览器解析到网页上包含的网址时，会在用户访问它们之前在后台对这些网址后所包含的主机名进行域名解析，等到页面载入完毕或者用户真正去点击这些网址时，相对应的 DNS 解析工作已经提前完成了，不会在用户点击后才开始解析 DNS。对于那些原本 DNS 解析较慢的用户能明显感觉到提速。
 
-### 隐性的资源预取 （Implicit prefetches）
+### 隐性的资源预获取 (Implicit prefetches)
 
-当浏览器发现页面上的某些链接不属于当前域下，会利用空闲时间自动预取一些资源。客户端首先检查本地缓存，如果没找到，那么会向 DNS 服务器请求资源，这些操作会在后台默默执行，不会影响页面的渲染与脚本的执行。
+当浏览器发现页面上的某些链接不属于当前域下，会利用空闲时间自动预取一些资源。客户端首先检查本地缓存，如果没找到，那么会向 DNS 服务器请求资源，这些操作会在后台执行，不会影响页面的渲染与脚本的执行。
 
 该手段目的是为了提高访问速度，而且相比不预取时会发送更少的请求，在移动端优化效果会更明显。
 
-#### 禁用隐性的资源预取 (implicit prefetching)
+#### 禁用隐性的资源预获取 (implicit prefetching)
 
 ```html
 <meta http-equiv="x-dns-prefetch-control" content="off">
 ```
 
-Even with X-DNS-Prefetch-Control meta tag (or http header) browsers will still
-prefetch any explicit dns-prefetch links.
+有了 X-DNS-Prefetch-Control meta 标签 (或者是 http header) ，浏览器仍然会进行预获取。
+在 Chrome 中，可以通过在地址栏输入 about:histograms/DNS 来观测一些有趣的 DNS 性能数据。[（出处）](http://www.dbanotes.net/web/dns_prefetching.html)
 
-**_WARNING:_** THIS MAY MAKE YOUR SITE SLOWER IF YOU RELY ON RESOURCES FROM
-FOREIGN DOMAINS.
+**_警告:_** 如果你的站点很依赖外域资源的话，这么做会拖慢站点。
 
-### 显性的资源预取 (Explicit prefetches)
+### 显性的资源预获取 (Explicit prefetches)
 
-Typically the browser only scans the HTML for foreign domains. If you have
-resources that are outside of your HTML (a javascript request to a remote
-server or a CDN that hosts content that may not be present on every page of
-your site, for example) then you can queue up a domain name to be prefetched.
+一般来说浏览器只会扫面外域的 HTML 内容。如果站点所需的资源在 HTML 之外（需从远程服务器或者 CDN 加载来的一段 js，这段 js 并不会出现在站点所有页面），那么这些资源预获取将会进入加载队列中去。
 
 ```html
 <link rel="dns-prefetch" href="//example.com">
 <link rel="dns-prefetch" href="//ajax.googleapis.com">
 ```
 
-You can use as many of these as you need, but it's best if they are all
-immediately after the [Meta
-Charset](https://developer.mozilla.org/en/HTML/Element/meta#attr-charset)
-element (which should go right at the top of the `head`), so the browser can
-act on them ASAP.
+你可以任意使用以上标签，但如果将其至于 [Meta
+Charset](https://developer.mozilla.org/en/HTML/Element/meta#attr-charset) 元素后就更好了（这些标签需出现在 `head` 标签之前），如此一来浏览器会立即做出（加载样式表、脚本等）反应。
 
-#### Common Prefetch Links
+#### 链接的预获取
 
 Amazon S3:
 
@@ -67,12 +60,11 @@ Microsoft Ajax Content Delivery Network:
 <link rel="dns-prefetch" href="//ajax.aspnetcdn.com">
 ```
 
-### Browser support for DNS prefetching
+### 支持 DNS 预获取的浏览器
 
-Chrome, Firefox 3.5+, Safari 5+, Opera (Unknown), IE 9 (called "Pre-resolution"
-on blogs.msdn.com)
+Chrome, Firefox 3.5+, Safari 5+, Opera （未知）, IE 9 （被称为 "Pre-resolution" 见  blogs.msdn.com）
 
-### Further reading about DNS prefetching
+### 关于 DNS 预获取的更多信息
 
 * https://developer.mozilla.org/En/Controlling_DNS_prefetching
 * http://dev.chromium.org/developers/design-documents/dns-prefetching
@@ -81,7 +73,7 @@ on blogs.msdn.com)
 * http://dayofjs.com/videos/22158462/web-browsers_alex-russel
 
 
-## Search
+## 搜索
 
 ### Direct search spiders to your sitemap
 
