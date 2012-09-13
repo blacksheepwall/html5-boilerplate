@@ -4,8 +4,8 @@
 
 ## 开始
 
-* [https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/usage.md](usage.md) — 概况
-* [https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/faq.md](faq.md) — FAQ
+* [usage.md](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/usage.md) — 概况
+* [faq.md](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/faq.md) — FAQ
 
 ## HTML5 Boilerplate 核心内容
 
@@ -18,10 +18,8 @@
 
 ## 开发
 
-* [Contributing to HTML5 Boilerplate](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/contribute.md) — Guidelines on how to
-  contribute effectively.
-* [Extending and customizing HTML5 Boilerplate](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/extend.md) — Going further with
-  the boilerplate.
+* [Contributing to HTML5 Boilerplate](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/contribute.md) — 贡献代码
+* [Extending and customizing HTML5 Boilerplate](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/extend.md) — 扩展代码
 
 ## 相关项目
 
