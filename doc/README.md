@@ -4,23 +4,23 @@
 
 ## 开始
 
-* [Usage](usage.md) — 概况
-* [FAQ](faq.md) — FAQ
+* [https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/usage.md](usage.md) — 概况
+* [https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/faq.md](faq.md) — FAQ
 
 ## HTML5 Boilerplate 核心内容
 
-* [HTML](html.md) — HTML 指南
-* [CSS](css.md) — CSS 指南
-* [JavaScript](js.md) — JavaScript 指南
-* [.htaccess](htaccess.md) — Apache web 服务器配置 [alternative server configs](https://github.com/h5bp/server-configs).
-* [crossdomain.xml](crossdomain.md) — 跨域请求引导文件
-* [Everything else](misc.md)
+* [html.md](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/html.md) — HTML 指南
+* [css.md](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/css.md) — CSS 指南
+* [js.md](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/javascript.md) — JavaScript 指南
+* [.htaccess](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/htaccess.md) — Apache web 服务器配置 [alternative server configs](https://github.com/h5bp/server-configs).
+* [crossdomain.xml](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/crossdomain.md) — 跨域请求引导文件
+* [Everything else](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/misc.md)
 
 ## 开发
 
-* [Contributing to HTML5 Boilerplate](contribute.md) — Guidelines on how to
+* [Contributing to HTML5 Boilerplate](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/contribute.md) — Guidelines on how to
   contribute effectively.
-* [Extending and customizing HTML5 Boilerplate](extend.md) — Going further with
+* [Extending and customizing HTML5 Boilerplate](https://github.com/sdg-sysdev/html5-boilerplate/blob/master/doc/extend.md) — Going further with
   the boilerplate.
 
 ## 相关项目
