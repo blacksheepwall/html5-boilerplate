@@ -75,19 +75,17 @@ Chrome, Firefox 3.5+, Safari 5+, Opera （未知）, IE 9 （被称为 "Pre-reso
 
 ## 搜索
 
-### Direct search spiders to your sitemap
+### 让搜索引擎直接访问站点地图 （sitemap）
 
-[Learn how to make a sitemap](http://www.sitemaps.org/protocol.php)
+[如果制作一份 sitemap](http://www.sitemaps.org/protocol.php)
 
 ```html
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 ```
 
-### Hide pages from search engines
+### 隐藏页面，不让搜索引擎抓取到
 
-According to Heather Champ, former community manager at Flickr, you should not
-allow search engines to index your "Contact Us" or "Complaints" page if you
-value your sanity. This is an HTML-centric way of achieving that.
+根据 Heather Champ 的理论，你不应该直接将 "Contact Us" 或 "Complaints" 页面暴露给搜索引擎， This is an HTML-centric way of achieving that.
 
 ```html
 <meta name="robots" content="noindex">
@@ -95,12 +93,9 @@ value your sanity. This is an HTML-centric way of achieving that.
 
 **_WARNING:_** DO NOT INCLUDE ON PAGES THAT SHOULD APPEAR IN SEARCH ENGINES.
 
-### Firefox and IE Search Plugins
+### Firefox 和 IE 的搜索插件
 
-Sites with in-site search functionality should be strongly considered for a
-browser search plugin. A "search plugin" is an XML file which defines how your
-plugin behaves in the browser. [How to make a browser search
-plugin](http://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plugin).
+强烈建议那些具备站内搜索功能的站点配置一个搜索插件，该插件是一段定义搜索引擎行为准则的 XML 文本。[如何制作搜索插件](http://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plugin).
 
 ```html
 <link rel="search" title="" type="application/opensearchdescription+xml" href="">
@@ -109,11 +104,10 @@ plugin](http://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plugi
 
 ## Internet Explorer
 
-### Prompt users to switch to "Desktop Mode" in IE10 Metro
+### 在 IE10 Metro 中提示用户切换到桌面模式
 
-IE10 does not support plugins, such as Flash, in Metro mode. If your site
-requires plugins, you can let users know that via the X-UA-Compatible meta
-element, which will prompt them to switch to Desktop Mode.
+Metro 模式下的 IE10 并不支持类似 flash 的插件，此时可以通过 X-UA-Compatible meta 标签告知用户手动切换至桌面模式。
+
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true">
