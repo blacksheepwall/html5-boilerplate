@@ -113,46 +113,38 @@ Metro 模式下的 IE10 并不支持类似 flash 的插件，此时可以通过 
 <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true">
 ```
 
-Here's what it looks like alongside H5BP's default X-UA-Compatible values:
+H5BP 默认的 X-UA-Compatible 值是这样的：
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
 ```
 
-You can find more information in [Microsoft's IEBlog post about prompting for
+更多信息，请查阅 [Microsoft's IEBlog post about prompting for
 plugin use in IE10 Metro
-Mode](http://blogs.msdn.com/b/ie/archive/2012/01/31/web-sites-and-a-plug-in-free-web.aspx).
+Mode](http://blogs.msdn.com/b/ie/archive/2012/01/31/web-sites-and-a-plug-in-free-web.aspx)。
 
-### IE Pinned Sites (IE9+)
+### IE 的固定站点 (Pinned Sites IE9+)
 
-Enabling your application for pinning will allow IE9 users to add it to their
-Windows Taskbar and Start Menu. This comes with a range of new tools that you
-can easily configure with the elements below. See more [documentation on IE9
-Pinned Sites](http://msdn.microsoft.com/en-us/library/gg131029.aspx).
+该功能可以将网页嵌入到 Windows 的工具条上，并提供一系列的快捷操作，参考[文档](http://msdn.microsoft.com/en-us/library/gg131029.aspx) 以及 [http://msdn.microsoft.com/zh-cn/library/gg491738(v=vs.85)]()
 
-### Name the Pinned Site for Windows
+### 为固定站点命名
 
-Without this rule, Windows will use the page title as the name for your
-application.
+如果不对其进行命名， Windows 会使用页面的 title 名作为应用名。
 
 ```html
 <meta name="application-name" content="Sample Title">
 ```
 
-### Give your Pinned Site a tooltip
-
-You know — a tooltip. A little textbox that appears when the user holds their
-mouse over your Pinned Site's icon.
+### 给固定站点设置 tooltip
 
 ```html
-<meta name="msapplication-tooltip" content="A description of what this site does.">
-```
+<meta name="msapplication-tooltip" content="A description of what this site does."> 
+```  
 
-### Set a default page for your Pinned Site
+参考 [http://blog.sina.com.cn/s/blog_4515673f0100npkg.html]() [http://blog.csdn.net/cuixiping/article/details/6885310]()
 
-If the site should go to a specific URL when it is pinned (such as the
-homepage), enter it here. One idea is to send it to a special URL so you can
-track the number of pinned users, like so:
+### 为固定站点设置一个默认页
+
 `http://www.example.com/index.html?pinned=true`
 
 ```html
