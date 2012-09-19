@@ -179,11 +179,10 @@ IE9+ 会为固定站点自动使用全局色彩来标识，以此区分开普通
 <meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
 ```
 
-### (Windows 8) High quality visuals for Pinned Sites
+### Windows 8 下视觉效果更佳的固定站点
 
-Windows 8 adds the ability for you to provide a PNG tile image and specify the
-tile's background color. [Full details on the IE
-blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx).
+Windows 8 允许用户提供一个 tile 的 PNG 图片，并指定 tile 的背景色 [Full details on the IE
+blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx)。
 
 * Create a 144x144 image of your site icon, filling all of the canvas, and
   using a transparent background.
