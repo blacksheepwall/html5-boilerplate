@@ -151,32 +151,28 @@ Mode](http://blogs.msdn.com/b/ie/archive/2012/01/31/web-sites-and-a-plug-in-free
 <meta name="msapplication-starturl" content="http://www.example.com/index.html?pinned=true">
 ```
 
-### Recolor IE's controls manually for a Pinned Site
+### 重新为 IE 控制栏定义颜色
 
-IE9+ will automatically use the overall color of your Pinned Site's favicon to
-shade its browser buttons. UNLESS you give it another color here. Only use
-named colors (`red`) or hex colors (`#ff0000`).
+IE9+ 会为固定站点自动使用全局色彩来标识，以此区分开普通站点。当然，你可以通过使用类似 (`red`) 或者 16 进制的 (`#ff0000`) 的值来完成自定义。
 
 ```html
 <meta name="msapplication-navbutton-color" content="#ff0000">
 ```
 
-### Manually set the window size of a Pinned Site
+### 手动设置固定站点的窗口大小
 
-If the site should open at a certain window size once pinned, you can specify
-the dimensions here. It only supports static pixel dimensions. 800x600
-minimum.
+固定站点窗口的大小也是可以自定义的，目前只支持像素，最小值为 800x600。
+
 
 ```html
 <meta name="msapplication-window" content="width=800;height=600">
 ```
 
-### Jump List "Tasks" for Pinned Sites
+### 跳转列表 (Jump List)
 
-Add Jump List Tasks that will appear when the Pinned Site's icon gets a
-right-click. Each Task goes to the specified URL, and gets its own mini icon
-(essentially a favicon, a 16x16 .ICO). You can add as many of these as you
-need.
+可以通过添加如下代码来给页面设置一个 icon，也可以采用传统的方法，将 16x16 的 favicon.ico 文件放到页面的根目录下。在点击 pinned 的时候，IE9 可以直接读到。
+
+更多信息 [http://msdn.microsoft.com/zh-cn/library/gg491743(v=vs.85).aspx]() 以及 [http://msdn.microsoft.com/zh-cn/library/gg491725(v=vs.85).aspx]()
 
 ```html
 <meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1.html;icon-uri=http://host/icon1.ico">
