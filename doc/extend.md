@@ -184,19 +184,12 @@ IE9+ 会为固定站点自动使用全局色彩来标识，以此区分开普通
 Windows 8 允许用户提供一个 tile 的 PNG 图片，并指定 tile 的背景色 [Full details on the IE
 blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx)。
 
-* Create a 144x144 image of your site icon, filling all of the canvas, and
-  using a transparent background.
-* Save this image as a 32-bit PNG and optimize it without reducing
-  colour-depth. It can be named whatever you want (e.g. `metro-tile.png`).
-* To reference the tile and its color, add the HTML `meta` elements described
-  in the IE Blog post.
+* 为站点创建一个 144x144 尺寸的图标，将其填充整个画布，并使用透明背景色。
+* 将图标文件保存为 32 位的 PNG，这被命名为 whatever you want (e.g. `metro-tile.png`)。
+* 为了方便引用 tile 及其色值，增加 HTML 的 `meta` 标签。
 
-### (Windows 8) Badges for Pinned Sites
+### (Windows 8) 固定站点的标识
 
-IE10 will poll an XML document for badge information to display on your app's
-tile in the Start screen. The user will be able to receive these badge updates
-even when your app isn't actively running. The badge's value can be a number,
-or one of a predefined list of glyphs.
 
 * [Tutorial on IEBlog with link to badge XML schema](http://blogs.msdn.com/b/ie/archive/2012/04/03/pinned-sites-in-windows-8.aspx)
 * [Available badge values](http://msdn.microsoft.com/en-us/library/ie/br212849.aspx)
@@ -205,10 +198,10 @@ or one of a predefined list of glyphs.
 <meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://www.example.com/path/to/file.xml" />
 ```
 
-### Suppress IE6 image toolbar
+### 去除 IE6 下保存图片的工具条
 
-Kill IE6's pop-up-on-mouseover toolbar for images that can interfere with
-certain designs and be pretty distracting in general.
+参考 [http://stackoverflow.com/questions/7207649/imagetoolbar-meta-tag-and-ie-versions]()
+
 
 ```html
 <meta http-equiv="imagetoolbar" content="false">
