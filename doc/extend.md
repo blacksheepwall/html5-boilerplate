@@ -321,47 +321,40 @@ docs](https://developers.google.com/chrome/web-store/docs/inline_installation).
 <meta name="apple-itunes-app" content="app-id=APP_ID,app-argument=SOME_TEXT">
 ```
 
-## Google Analytics augments
+## Google 统计参数
 
-### More tracking settings
+### 更详细的追踪参数
 
-The [optimized Google Analytics
-snippet](http://mathiasbynens.be/notes/async-analytics-snippet) included with
-HTML5 Boilerplate includes something like this:
+HTML5 Boilerplate 中 [优化过的 Google 统计代码段](http://mathiasbynens.be/notes/async-analytics-snippet) 如下所示：
 
 ```js
 var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
 ```
 
-In case you need more settings, just extend the array literal instead of
-[`.push()`ing to the
+如果你需要更详细的配置，扩展 (extend) 数组而不是在后面使用 [`.push()`ing to the
 array](http://mathiasbynens.be/notes/async-analytics-snippet#dont-push-it)
-afterwards:
+即可：
 
 ```js
 var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview'], ['_setAllowAnchor', true]];
 ```
 
-### Anonymize IP addresses
+### 将 IP 地址隐藏
 
-In some countries, no personal data may be transferred outside jurisdictions
-that do not have similarly strict laws (i.e. from Germany to outside the EU).
-Thus a webmaster using the Google Analytics script may have to ensure that no
-personal (trackable) data is transferred to the US. You can do that with [the
+有些国家由于政府政策原因，个人数据信息只能在法律规定的范围内传播（例如从德国发送数据至欧盟外的地方，会有限制）。网站管理员要确保个人数据不能误传送至美国，只需这么做 [the
 `_gat.anonymizeIp`
-option](http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp).
-In use it looks like this:
+option](http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp)。  
 
 ```js
 var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_gat._anonymizeIp'], ['_trackPageview']];
 ```
 
-### Track jQuery AJAX requests in Google Analytics
+### 追踪 Google Analytics 的 AJAX 请求
 
-An article by @JangoSteve explains how to [track jQuery AJAX requests in Google
+可参考由 @JangoSteve 撰写的一文 [track jQuery AJAX requests in Google
 Analytics](http://www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics/).
 
-Add this to `plugins.js`:
+在 `plugins.js` 加入以下代码：
 
 ```js
 /*
@@ -375,9 +368,9 @@ if (typeof _gaq !== "undefined" && _gaq !== null) {
 }
 ```
 
-### Track JavaScript errors in Google Analytics
+### 追踪 Google Analytics 里的 JavaScript 异常
 
-Add this function after `_gaq` is defined:
+在 `_gaq` 定义后加入这段函数：
 
 ```js
 (function(window){
@@ -398,9 +391,9 @@ Add this function after `_gaq` is defined:
 }(window));
 ```
 
-### Track page scroll
+### 追踪页面的滚动事件
 
-Add this function after `_gaq` is defined:
+在 `_gaq` 定义后加入这段函数：
 
 ```js
 $(function(){
@@ -424,28 +417,21 @@ $(function(){
 ```
 
 
-## Miscellaneous
+## 杂项
 
-* Use [HTML5
-  polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills).
+* 使用 [HTML5
+  polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills) 。
 
-* Use [Microformats](http://microformats.org/wiki/Main_Page) (via
-  [microdata](http://microformats.org/wiki/microdata)) for optimum search
-  results
-  [visibility](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html).
+* 使用 [微数据格式](http://microformats.org/wiki/Main_Page) (via
+  [microdata](http://microformats.org/wiki/microdata)) 来定制更多搜索结果的[显示](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html) 。
 
-* If you're building a web app you may want [native style momentum scrolling in
-  iOS5](http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/) using
-  `-webkit-overflow-scrolling: touch`.
+* 如果你正在开发 web app，想实现 [iOS5 下原生的弹性滚动效果](http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/) ，使用  `-webkit-overflow-scrolling: touch` 。
 
-* Avoid development/stage websites "leaking" into SERPs (search engine results
+* 避免开发阶段 "leaking" into SERPs (search engine results
   page) by [implementing X-Robots-tag
-  headers](https://github.com/h5bp/html5-boilerplate/issues/804).
+  headers](https://github.com/h5bp/html5-boilerplate/issues/804) 。
 
-* Screen readers currently have less-than-stellar support for HTML5 but the JS
-  script [accessifyhtml5.js](https://github.com/yatil/accessifyhtml5.js) can
-  help increase accessibility by adding ARIA roles to HTML5 elements.
+* 一些屏幕阅读器对 HTML5 以及 JS 支持性不太好， [accessifyhtml5.js](https://github.com/yatil/accessifyhtml5.js) 可以通过加入 ARIA roles 属性改善可访问性的问题。
 
 
-*Many thanks to [Brian Blakely](https://github.com/brianblakely) for
-contributing much of this information.*
+* 向 [Brian Blakely](https://github.com/brianblakely) 致谢。*
