@@ -208,11 +208,11 @@ blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pin
 ```
 
 
-## Social Networks
+## 社交网络
 
-### Facebook Open Graph data
+### Facebook 的 Open Graph 数据
 
-You can control the information that Facebook and others display when users
+（由于某些特殊原因，关于这点不作翻译）You can control the information that Facebook and others display when users
 share your site. Below are just the most basic data points you might need. For
 specific content types (including "website"), see [Facebook's built-in Open
 Graph content
@@ -227,9 +227,9 @@ tutorial](https://developers.facebook.com/docs/opengraph/tutorial/).
 <meta property="og:image" content="">
 ```
 
-### Twitter Cards
+### Twitter 卡片
 
-Twitter provides a snippet specification that serves a similar purpose to Open
+（由于某些特殊原因，关于这点不作翻译）Twitter provides a snippet specification that serves a similar purpose to Open
 Graph. In fact, Twitter will use Open Graph when Cards is not available. Note
 that, as of this writing, Twitter requires that app developers activate Cards
 on a per-domain basis. You can read more about the various snippet formats
@@ -250,21 +250,17 @@ documentation](https://dev.twitter.com/docs/cards).
 
 ## URLs
 
-### Canonical URL
+### 标准链接 (Canonical URL)
 
-Signal to search engines and others "Use this URL for this page!" Useful when
-parameters after a `#` or `?` is used to control the display state of a page.
-`http://www.example.com/cart.html?shopping-cart-open=true` can be indexed as
-the cleaner, more accurate `http://www.example.com/cart.html`.
+指符合规范和标准的网站链接。通过定义唯一的标准规范 URL，可以避免由于 URL 格式不同造成的重复内容问题。Google、Yahoo、Mircrosoft 三大搜索引擎在 09 年初宣布支持 Link 标签的一个新属性 Canonical，为网页指定权威链接，用来改善网站由于 URL 格式不同造成的重复内容问题。通过添加此标签你可以自主控制出现在搜索结果中的网站的 URL 格式，这样就有助于消除那些影响你网页声望值的因素。参考 [http://ask.enquiro.com/2009/what-is-a-canonical-url/]()
 
 ```html
 <link rel="canonical" href="">
 ```
 
-### Official shortlink
+### 短链接 (shortlink)
 
-Signal to the world "This is the shortened URL to use this page!" Poorly
-supported at this time. Learn more by reading the [article about shortlinks on
+参考 [article about shortlinks on
 the Microformats wiki](http://microformats.org/wiki/rel-shortlink).
 
 ```html
@@ -276,7 +272,7 @@ the Microformats wiki](http://microformats.org/wiki/rel-shortlink).
 
 ### RSS
 
-Have an RSS feed? Link to it here. Want to [learn how to write an RSS feed from
+参考 [learn how to write an RSS feed from
 scratch](http://www.rssboard.org/rss-specification)?
 
 ```html
@@ -285,34 +281,31 @@ scratch](http://www.rssboard.org/rss-specification)?
 
 ### Atom
 
-Atom is similar to RSS, and you might prefer to use it instead of or in
-addition to it. [See what Atom's all
+Atom 与 RSS 类似 [See what Atom's all
 about](http://www.atomenabled.org/developers/syndication/).
 
 ```html
 <link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
 ```
 
-### Pingbacks
+### 留下评论 (Pingbacks)
 
-Your server may be notified when another site links to yours. The href
-attribute should contain the location of your pingback service.
+当有其他网站的链接指向你的服务器时，pingbacks 会通知你。
 
 ```html
 <link rel="pingback" href="">
 ```
 
-* High-level explanation: http://codex.wordpress.org/Introduction_to_Blogging#Pingbacks
-* Step-by-step example case: http://www.hixie.ch/specs/pingback/pingback-1.0#TOC5
-* PHP pingback service: http://blog.perplexedlabs.com/2009/07/15/xmlrpc-pingbacks-using-php/
+* 详细分析： http://codex.wordpress.org/Introduction_to_Blogging#Pingbacks
+* 进阶说明： http://www.hixie.ch/specs/pingback/pingback-1.0#TOC5
+* PHP 的 pingback 服务： http://blog.perplexedlabs.com/2009/07/15/xmlrpc-pingbacks-using-php/
 
 
 ## App Stores
 
-### Install a Chrome Web Store app
+### 安装 Chrome Web Store 应用
 
-Users can install a Chrome app directly from your website, as long as the app
-and site have been associated via Google's Webmaster Tools. Read more on
+只要应用与网站通过 Google's 站点管理工具进行关联，用户就能直接从你的网站安装一个 Chrome 应用。更多信息请查询
 [Chrome Web Store's Inline Installation
 docs](https://developers.google.com/chrome/web-store/docs/inline_installation).
 
@@ -320,11 +313,9 @@ docs](https://developers.google.com/chrome/web-store/docs/inline_installation).
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 ```
 
-### Smart App Banners in iOS 6 Safari
+### iOS 6 下 Safari 智能广告条
 
-Stop bothering everyone with gross modals advertising your entry in the App Store.
-This bit of code will unintrusively allow the user the option to download your iOS
-app, or open it with some data about the user's current state on the website.
+通过以下这段代码，跟那些做工粗糙时不时打扰用户的模态广告说再见了。
 
 ```html
 <meta name="apple-itunes-app" content="app-id=APP_ID,app-argument=SOME_TEXT">
