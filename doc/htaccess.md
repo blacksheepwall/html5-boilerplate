@@ -3,12 +3,9 @@ table of contents](README.md)
 
 # .htaccess
 
-In Apache HTTP server, `.htaccess` (hypertext access) is the configuration file
-that allows for web server configuration. HTML5 Boilerplate includes a number
-of best practice server rules for making web pages fast and secure, these rules
-can be applied by configuring `.htaccess` file.
+在 Apache HTTP 服务器而言， `.htaccess` (超文本访问 hypertext access) 是一份 web 服务器配置文件。 HTML5 Boilerplate 将其包含在内，并默认设置了一些最佳实践的规则。
 
-**You'll want to have these modules enabled for optimum performance:**
+**你可以调整这些模块以此获得更好的性能：**
 
 * `mod_setenvif.c` (setenvif_module)
 * `mod_headers.c` (headers_module)
