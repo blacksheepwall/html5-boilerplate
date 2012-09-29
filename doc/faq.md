@@ -5,11 +5,10 @@ table of contents](README.md)
 
 ## 为什么不使用 http 开头的 url 来载入 jQuery？
 
-这是有意为之的，具体可见 [protocol-relative
-URLs](http://paulirish.com/2010/the-protocol-relative-url/) 。
+这是有意为之的，具体可见 [protocol-relative URLs](http://paulirish.com/2010/the-protocol-relative-url/) 。
 
 **请注意** 引用资源请使用相对协议 (protocol-relative) URL 。  
-参考资料：[http://paulirish.com/2010/the-protocol-relative-url/]() 以及 [http://ioio.name/the-protocol-relative-url.html]()
+参考资料： [http://paulirish.com/2010/the-protocol-relative-url/]() 以及 [http://ioio.name/the-protocol-relative-url.html]()
 
 
 ### 为什么不直接从 Google 的 CDN 上加载最新的 jQuery 版本？
@@ -33,10 +32,8 @@ other](http://www.quora.com/Is-Bootstrap-a-complement-OR-an-alternative-to-HTML5
 
 ### 什么是 profiling，如何使用？
 
-[Firebug](http://michaelsync.net/2007/09/10/firebug-tutorial-logging-profiling-and-commandline-part-ii)
-以及 [Chrome Dev
-tools](http://code.google.com/chrome/devtools/docs/profiles.html) 提供了 profiling
-，至于 IE中 如何调试，在此不赘述。
+[Firebug](http://michaelsync.net/2007/09/10/firebug-tutorial-logging-profiling-and-commandline-part-ii) 以及 [Chrome Dev tools](http://code.google.com/chrome/devtools/docs/profiles.html) 提供了 profiling
+，至于 IE 中如何调试，在此不赘述。
 
 
 ### 当新版本的 HTML5 Boilerplate 发布以后，我的站点是否需要同步升级？
@@ -44,6 +41,6 @@ tools](http://code.google.com/chrome/devtools/docs/profiles.html) 提供了 prof
 没必要，框架的根基一般不会调整。
 
 
-### 遇到困难，在哪里可以获得帮助？
+### 遇到困难，如何获得帮助？
 
 求助请访问 [StackOverflow](http://stackoverflow.com/questions/tagged/html5boilerplate) 。

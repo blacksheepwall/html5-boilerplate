@@ -9,7 +9,7 @@ HTML5 Boilerplate 中包含了一个项目文件 `.gitignore`，该文件主要�
 与操作系统以及编辑器相关的文档可以通过使用 "global 
 ignore" 来指定忽略。
 
-举例来说，如果你想将 HOME 目录下的文件以及子目录加入全局忽略 globally ignore ，可以增加以下代码到你的 `~/.gitconfig` 中：
+举例来说，如果你想将 HOME 目录下的文件以及子目录加入全局忽略 globally ignore，可以增加以下代码到你的 `~/.gitconfig` 中：
 
 ```gitignore
 [core]

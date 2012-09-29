@@ -1,7 +1,7 @@
 [HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
 table of contents](README.md)
 
-# Usage
+# 使用方式
 
 只要你 clone 或下载了这份 HTML5 模板，你可以通过接下来的步骤创建你的应用：
 
@@ -13,7 +13,7 @@ table of contents](README.md)
 5. 部署站点。
 
 
-## Basic structure
+## 基本结构
 
 一份 HTML5 基础模板大致目录如下所示：
 
@@ -41,23 +41,21 @@ table of contents](README.md)
 
 ### css
 
-包含项目所有 CSS 文件 [About the
-CSS](css.md) 。
+包含项目所有 CSS 文件 [关于 CSS](css.md) 。
 
-### doc
+### 文档
 
 包含所有文档。
 
 ### js
 
-JS 文件目录。库、插件、以及其他自定义代码都放在这个目录下 [About the JavaScript](js.md) 。
+JS 文件目录。库、插件、以及其他自定义代码都放在这个目录下 [关于 JavaScript](js.md) 。
 
 ### .htaccess
 
-Apache 服务器默认配置文件 [About the .htaccess](htaccess.md) 。
+Apache 服务器默认配置文件 [关于 .htaccess](htaccess.md) 。
 
-关于服务器配置，请详见 [server configs
-repo](https://github.com/h5bp/server-configs) 。
+关于服务器配置，请详见 [服务器配置](https://github.com/h5bp/server-configs) 。
 
 ### 404.html
 
@@ -69,7 +67,7 @@ repo](https://github.com/h5bp/server-configs) 。
 
 在调整项目文件目录时，确保所有 CSS 以及 JavaScript 文件的路径正确。
 
-如果你正在使用 Google Analytics, 确保将统计代码至于该页面的底部。
+如果你正在使用 Google Analytics，确保将统计代码至于该页面的底部。
 
 ### humans.txt
 
@@ -79,14 +77,10 @@ repo](https://github.com/h5bp/server-configs) 。
 
 该文件面向搜索引擎，可以配置一系列不需要爬虫爬取的页面。
 
-
 ### crossdomain.xml
 
-跨域请求模板文件 [About
-crossdomain.xml](crossdomain.md) 。
+跨域请求模板文件 [关于 crossdomain.xml](crossdomain.md) 。
 
 ### icons
 
-使用你自己的站点图标来代替默认的 `favicon.ico`。 [HTML5 Boilerplate Favicon and
-Apple Touch Icon
-PSD-Template](http://drublic.de/blog/html5-boilerplate-favicons-psd-template/) 。
+使用你自己的站点图标来代替默认的 `favicon.ico`。 [HTML5 Boilerplate Favicon 和 Apple Touch Icon PSD-Template](http://drublic.de/blog/html5-boilerplate-favicons-psd-template/) 。
