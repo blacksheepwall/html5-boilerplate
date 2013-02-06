@@ -1,5 +1,5 @@
 [HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
-table of contents](README.md)
+table of contents](TOC.md)
 
 # 使用方式
 
@@ -20,15 +20,16 @@ table of contents](README.md)
 ```
 .
 ├── css
-│   └── main.css
+│   ├── main.css
+│   └── normalize.css
 ├── doc
 ├── img
 ├── js
 │   ├── main.js
 │   ├── plugins.js
 │   └── vendor
-│       ├── jquery-1.8.0.min.js
-│       └── modernizr-2.6.1.min.js
+│       ├── jquery.min.js
+│       └── modernizr.min.js
 ├── .htaccess
 ├── 404.html
 ├── index.html

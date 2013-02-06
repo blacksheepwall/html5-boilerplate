@@ -1,5 +1,5 @@
 [HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
-table of contents](README.md)
+table of contents](TOC.md)
 
 # 扩展与定制 HTML5 Boilerplate
 
@@ -195,7 +195,7 @@ blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pin
 * [Available badge values](http://msdn.microsoft.com/en-us/library/ie/br212849.aspx)
 
 ```html
-<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://www.example.com/path/to/file.xml" />
+<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://www.example.com/path/to/file.xml">
 ```
 
 ### 去除 IE6 下保存图片的工具条
@@ -244,7 +244,6 @@ documentation](https://dev.twitter.com/docs/cards).
 <meta name="twitter:title" content="">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="http://www.example.com/path/to/image.jpg">
-
 ```
 
 
