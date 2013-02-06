@@ -1,5 +1,4 @@
-[HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
-table of contents](README.md)
+[项目首页](http://html5boilerplate.com) | [文档概览](TOC.md)
 
 # crossdomain.xml
 
@@ -14,7 +13,3 @@ Adobe Flash Player, Adobe Reader 等 web 客户端处理一些跨域数据。
 
 更多信息请访问 Adobe 关于 [cross-domain policy file
 specification](http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html) 的文章。
-
-[Cross-domain policy file
-specification](http://learn.adobe.com/wiki/download/attachments/64389123/CrossDomain_PolicyFile_Specification.pdf?version=1) 
-- (PDF, 129 KB)

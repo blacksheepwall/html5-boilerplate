@@ -1,4 +1,4 @@
-[HTML5 Boilerplate homepage](http://html5boilerplate.com)
+[项目首页](http://html5boilerplate.com)
 
 # HTML5 Boilerplate 文档:
 

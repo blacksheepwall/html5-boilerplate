@@ -1,5 +1,4 @@
-[HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
-table of contents](README.md)
+[项目首页](http://html5boilerplate.com) | [文档概览](TOC.md)
 
 # The CSS
 
@@ -16,7 +15,7 @@ HTML5 Boilerplate CSS 包含：
 
 ## Normalize.css
 
-Normalize.css 是个现代的、为 HTML5 准备的 CSS reset，该文件中富含大量注释。访问 [Normalize.css
+Normalize.css 是个现代的、为 HTML5 准备的 CSS resets，该文件中富含大量注释。访问 [Normalize.css
 project](http://necolas.github.com/normalize.css/) 查看更多信息。
 
 

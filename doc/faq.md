@@ -1,5 +1,4 @@
-[HTML5 Boilerplate homepage](http://html5boilerplate.com) | [Documentation
-table of contents](README.md)
+[项目首页](http://html5boilerplate.com) | [文档概览](TOC.md)
 
 # FAQ
 
