@@ -197,6 +197,14 @@ blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pin
 <meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://www.example.com/path/to/file.xml">
 ```
 
+
+### Disable link highlighting upon tap in IE10
+
+Similar to [-webkit-tap-highlight-color](http://davidwalsh.name/mobile-highlight-color)
+in iOS Safari. Unlike that CSS property, this is an HTML meta element, and it's
+value is boolean rather than a color. It's all or nothing.
+
+
 ### 去除 IE6 下保存图片的工具条
 
 参考 [http://stackoverflow.com/questions/7207649/imagetoolbar-meta-tag-and-ie-versions]()
